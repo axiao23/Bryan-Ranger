@@ -1,20 +1,32 @@
-from torch.utils.data import Dataset
+import numpy as np
 import pandas as pd
-import os
-from PIL import Image
-import torchvision.transforms.functional as TF
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-import dill
+import skimage.morphology as mo
+from skimage import io, color #Scikit-Image
+from PIL import Image # Pillow
+import cv2
+import os
+import random
+import torch # Will work on using PyTorch here later
+from torch.utils.data  import Dataset, DataLoader
+from torchvision import transforms
+import torchvision.transforms.functional as TF
+import torch.nn as nn
+import torch.nn.functional as F
+import torchvision
+import matplotlib.pyplot as plt
+import pandas as pd
 
 class Muscle(Dataset):
   def __init__(self, train = True, transformX = None, transformY = None):
     # I have previously created a file named 500_train.csv using the file names. Here we will read in the csv to access data in google drive.
     # hayo: should this be 300_train.csv??
-    validation_set_size = 0.2
     self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger Lab/Bryan-Ranger/local_data/300_train.csv')
     self.transformX = transformX
     self.transformY = transformY
     self.train = train
+
     # Split the dataset to train and validation using sklearn function train_test_split
     self.train_data, self.validation_data = train_test_split(self.pixel_file,
                                                                 test_size = validation_set_size,
@@ -25,7 +37,8 @@ class Muscle(Dataset):
     return len(self.validation_data)
 
   def __getitem__(self, index):
-    train_path = '/Users/taliacho/Downloads/Ranger Lab/Bryan-Ranger/local_data/train_data'
+    train_path = '/Users/taliacho/Downloads/Ranger Lab/Bryan-Ranger/local_data/train_data-2'
+
     if self.train:
       imx_name = os.path.join(train_path, self.train_data.iloc[index, 1])
       imy_name = os.path.join(train_path, self.train_data.iloc[index, 1].replace('.jpeg','_mask.jpg'))
