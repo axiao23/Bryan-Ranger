@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 class Muscle(Dataset):
-  def __init__(self, train = True, transformX = None, transformY = None):
+  def __init__(self, train = True, transformX = None, transformY = None, validation_set_size = 0.2):
     # I have previously created a file named 500_train.csv using the file names. Here we will read in the csv to access data in google drive.
     # hayo: should this be 300_train.csv??
     self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger Lab/Bryan-Ranger/local_data/300_train.csv')
