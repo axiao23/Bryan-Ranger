@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
@@ -19,13 +18,15 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 class Muscle(Dataset):
-  def __init__(self, train = True, transformX = None, transformY = None, validation_set_size = 0.2):
+  def __init__(self, train = True, transformX = None, transformY = None):
     # I have previously created a file named 500_train.csv using the file names. Here we will read in the csv to access data in google drive.
     # hayo: should this be 300_train.csv??
     self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger Lab/Bryan-Ranger/local_data/300_train.csv')
     self.transformX = transformX
     self.transformY = transformY
     self.train = train
+
+    validation_set_size = 0.2 
 
     # Split the dataset to train and validation using sklearn function train_test_split
     self.train_data, self.validation_data = train_test_split(self.pixel_file,
