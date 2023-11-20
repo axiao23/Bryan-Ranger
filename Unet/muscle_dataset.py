@@ -4,12 +4,11 @@ from sklearn.model_selection import train_test_split
 import skimage.morphology as mo
 from skimage import io, color #Scikit-Image
 from PIL import Image # Pillow
-import cv2
 import os
 import random
 import torch # Will work on using PyTorch here later
 from torch.utils.data  import Dataset, DataLoader
-from torchvision import transforms
+from torchvision import transforms 
 import torchvision.transforms.functional as TF
 import torch.nn as nn
 import torch.nn.functional as F
@@ -21,7 +20,7 @@ class Muscle(Dataset):
   def __init__(self, train = True, transformX = None, transformY = None):
     # I have previously created a file named 500_train.csv using the file names. Here we will read in the csv to access data in google drive.
     # hayo: should this be 300_train.csv??
-    self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger Lab/Bryan-Ranger/local_data/300_train.csv')
+    self.pixel_file = pd.read_csv('.../Ranger Lab/Bryan-Ranger/local_data/300_train.csv')
     self.transformX = transformX
     self.transformY = transformY
     self.train = train
@@ -38,7 +37,7 @@ class Muscle(Dataset):
     return len(self.validation_data)
 
   def __getitem__(self, index):
-    train_path = '/Users/taliacho/Downloads/Ranger Lab/Bryan-Ranger/local_data/train_data-2'
+    train_path = '.../Ranger Lab/Bryan-Ranger/local_data/train_data-2'
 
     if self.train:
       imx_name = os.path.join(train_path, self.train_data.iloc[index, 1])
