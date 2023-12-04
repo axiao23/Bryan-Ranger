@@ -7,4 +7,4 @@ test data:
 - 500 test data + IoU test csv
 
 validation data:
-- 
+- split 
