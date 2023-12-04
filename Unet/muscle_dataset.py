@@ -34,7 +34,7 @@ class Muscle(Dataset):
     return len(self.validation_data)
 
   def __getitem__(self, index):
-    train_path = '../local_data/train_data-2'
+    train_path = '../local_data/train_data'
 
     if self.train:
       imx_name = os.path.join(train_path, self.train_data.iloc[index, 1])
