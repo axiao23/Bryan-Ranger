@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 import skimage.morphology as mo
-# from skimage import io, color #Scikit-Image
+from skimage import io, color #Scikit-Image
 from PIL import Image # Pillow
 import os
 import random
