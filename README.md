@@ -1,11 +1,10 @@
 # Bryan-Ranger
 Dr. Bryan Ranger's Lab at Boston College.
 
-Hayo's To do Winter break 2023
-- clean up the data folders
-- create 1 folder for data
-- merge rectus abd data into 1 folder, make a new csv file, write function to split data
-- label UMN
-- move masks to UMN folder
-- finish BT-UNet 
+"UNet" = conventional Unet using phantom data <br>
+"body_comp" = statistical analysis of FFT FM and muscle thickness <br>
+"gdrive" = API attempt to synch google drive with github <br>
+"clinical_data" = UMN dataset original not cropped <br>
+"local_data" = phantom and clinical data cropped and preprocessed <br>
+"preprocess" = used to process UMN data <br>
 
