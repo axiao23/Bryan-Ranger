@@ -4,7 +4,7 @@ import pandas as pandas
 import numpy as numpy
 import matplotlib.pyplot as plt
 
-mm = pandas.read_excel("C:\\Users\\student\\Downloads\\US_data_1.29.24.xlsx")
+mm = pandas.read_excel("C:\\Users\\loebma\\Downloads\\US_data_1.29.24.xlsx")
 mm['BM'] = mm[['B1M', 'B2M', 'B3M']].mean(axis=1,skipna=True)
 mm['BA'] = mm[['B1A', 'B2A', 'B3A']].mean(axis=1,skipna=True)
 mm['AA'] = mm[['A1A', 'A2A', 'A3A']].mean(axis=1,skipna=True)
@@ -16,47 +16,93 @@ mm_avg = mm[['Study ID','BM','BA','AM','AA','QM','QA']]
 
 #print(mm)
 
-hp = pandas.read_excel("C:\\Users\\student\\Downloads\\Data_11.5.23.xlsx")
-hp_check = hp[['Study_ID','PerFM','PerFFM']]
-hp_avg = hp[['PerFM','PerFFM']]
+hp = pandas.read_excel("C:\\Users\\loebma\\Downloads\\Data_11.5.23.xlsx")
+hp_check = hp[['Study_ID','PerFM','PerFFM', 'FFM']]
+hp_avg = hp[['PerFM','PerFFM','FFM']]
 
 df = pandas.concat([mm_avg, hp_avg], axis=1)
 print(df)
 
-lowFFM = []
-midFFM = []
-highFFM = []
+#Flags
+PerFFMxMuscle = True
+FFMxMuscle = False
 
-muscle = 'AA'
-count = 0
-for index, row in df.iterrows():
-    if row['PerFFM'] < 88:
-        if row[muscle] != 'nan':
-            lowFFM.append(row[muscle])
+if PerFFMxMuscle == True:
+    lowFFM = []
+    midFFM = []
+    highFFM = []
+
+    #Change the muscle to BM, BA, AM, AA, QM, or QA
+    muscle = 'QA'
+    count = 0
+    for index, row in df.iterrows():
+        if row['PerFFM'] < 88:
+            if row[muscle] != 'nan':
+                lowFFM.append(row[muscle])
+                count += 1
+        elif row['PerFFM'] < 92 and row['PerFFM'] >= 88:
+            midFFM.append(row[muscle])
             count += 1
-    elif row['PerFFM'] < 92 and row['PerFFM'] >= 88:
-        midFFM.append(row[muscle])
-        count += 1
-    elif row['PerFFM'] >= 92:
-        highFFM.append(row[muscle])
-        count +=1 
-print (count)
-#print(len(lowFFM))
-#print(len(midFFM))
-#print(len(highFFM))
-lowFFM = [x for x in lowFFM if not math.isnan(x)]
-midFFM = [x for x in midFFM if not math.isnan(x)]
-highFFM = [x for x in highFFM if not math.isnan(x)]
-#print(lowFFM)
-#print(midFFM)
-#print(highFFM)
+        elif row['PerFFM'] >= 92:
+            highFFM.append(row[muscle])
+            count +=1 
+    print (count)
+    print(len(lowFFM))
+    print(len(midFFM))
+    print(len(highFFM))
+    lowFFM = [x for x in lowFFM if not math.isnan(x)]
+    midFFM = [x for x in midFFM if not math.isnan(x)]
+    highFFM = [x for x in highFFM if not math.isnan(x)]
+    print(lowFFM)
+    print(midFFM)
+    print(highFFM)
+    print(lowFFM)
+    dis = [lowFFM, midFFM, highFFM]
+    figure = plt.figure(figsize=(15,6))
+    ax = figure.add_subplot(111)
+    ax.set_yticklabels(['Percent FFM < 88%','Percent FFM 88-92%','Percent FFM > 92%'])
+    plt.title("Percent Fat Free Mass Compared to Quadricep Adipose Measurement (mm)")
+    ax.get_xaxis().tick_bottom()
+    ax.get_yaxis().tick_left()
+    bp_low = ax.boxplot(dis, patch_artist = True, vert=0)
+    plt.show()
 
-dis = [lowFFM, midFFM, highFFM]
-figure = plt.figure()
-ax = figure.add_subplot(111)
-ax.set_yticklabels(['Percent FFM < 88%','Percent FFM 88-92%','Percent FFM > 92%'])
-plt.title("Percent Fat Free Mass Compared to Abdominal Adipose Measurement (mm)")
-ax.get_xaxis().tick_bottom()
-ax.get_yaxis().tick_left()
-bp_low = ax.boxplot(dis, patch_artist = True, vert=0)
-plt.show()
+if FFMxMuscle == True:
+    lowFFM = []
+    midFFM = []
+    highFFM = []
+
+    #Change the muscle to BM, BA, AM, AA, QM, or QA
+    muscle = 'BM'
+    count = 0
+    for index, row in df.iterrows():
+        if row['FFM'] < 1.8:
+            if row[muscle] != 'nan':
+                lowFFM.append(row[muscle])
+                count += 1
+        elif row['FFM'] < 2 and row['FFM'] >= 1.8:
+            midFFM.append(row[muscle])
+            count += 1
+        elif row['FFM'] >= 2:
+            highFFM.append(row[muscle])
+            count +=1 
+    print (count)
+    print(len(lowFFM))
+    print(len(midFFM))
+    print(len(highFFM))
+    lowFFM = [x for x in lowFFM if not math.isnan(x)]
+    midFFM = [x for x in midFFM if not math.isnan(x)]
+    highFFM = [x for x in highFFM if not math.isnan(x)]
+    print(lowFFM)
+    print(midFFM)
+    print(highFFM)
+    print(lowFFM)
+    dis = [lowFFM, midFFM, highFFM]
+    figure = plt.figure(figsize=(9,6))
+    ax = figure.add_subplot(111)
+    ax.set_yticklabels(['FFM < 1.8kg','FFM 1.8-2kg','FFM > 2kg'])
+    plt.title("Fat Free Mass Compared to Biceps Muscle Measurement (mm)")
+    ax.get_xaxis().tick_bottom()
+    ax.get_yaxis().tick_left()
+    bp_low = ax.boxplot(dis, patch_artist = True, vert=0)
+    plt.show()
