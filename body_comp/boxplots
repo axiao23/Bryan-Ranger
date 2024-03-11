@@ -4,7 +4,7 @@ import pandas as pandas
 import numpy as numpy
 import matplotlib.pyplot as plt
 
-mm = pandas.read_excel("C:\\Users\\loebma\\Downloads\\US_data_1.29.24.xlsx")
+mm = pandas.read_excel("C:\\Users\\marye\\Downloads\\US_data_1.29.24.xlsx")
 mm['BM'] = mm[['B1M', 'B2M', 'B3M']].mean(axis=1,skipna=True)
 mm['BA'] = mm[['B1A', 'B2A', 'B3A']].mean(axis=1,skipna=True)
 mm['AA'] = mm[['A1A', 'A2A', 'A3A']].mean(axis=1,skipna=True)
@@ -16,16 +16,17 @@ mm_avg = mm[['Study ID','BM','BA','AM','AA','QM','QA']]
 
 #print(mm)
 
-hp = pandas.read_excel("C:\\Users\\loebma\\Downloads\\Data_11.5.23.xlsx")
-hp_check = hp[['Study_ID','PerFM','PerFFM', 'FFM']]
-hp_avg = hp[['PerFM','PerFFM','FFM']]
+hp = pandas.read_excel("C:\\Users\\marye\\Downloads\\Data_11.5.23.xlsx")
+hp_check = hp[['Study_ID', 'Sex','PerFM','PerFFM', 'FFM','Race']]
+hp_avg = hp[['Sex','PerFM','PerFFM','FFM','Race']]
 
 df = pandas.concat([mm_avg, hp_avg], axis=1)
-print(df)
+#print(df)
 
 #Flags
-PerFFMxMuscle = True
+PerFFMxMuscle = False
 FFMxMuscle = False
+Demo = True
 
 if PerFFMxMuscle == True:
     lowFFM = []
@@ -102,6 +103,34 @@ if FFMxMuscle == True:
     ax = figure.add_subplot(111)
     ax.set_yticklabels(['FFM < 1.8kg','FFM 1.8-2kg','FFM > 2kg'])
     plt.title("Fat Free Mass Compared to Biceps Muscle Measurement (mm)")
+    ax.get_xaxis().tick_bottom()
+    ax.get_yaxis().tick_left()
+    bp_low = ax.boxplot(dis, patch_artist = True, vert=0)
+    plt.show()
+
+if Demo == True:
+
+    femaleFFM = []
+    maleFFM = []
+#Change the muscle to BM, BA, AM, AA, QM, or QA
+    muscle = 'BM'
+
+    for index, row in df.iterrows():
+        if row['Sex'] == 'F':
+            femaleFFM.append(row[muscle])
+        if row['Sex'] == 'M':
+            maleFFM.append(row[muscle])
+
+    femaleFFM = [x for x in femaleFFM if not math.isnan(x)]
+    maleFFM = [x for x in maleFFM if not math.isnan(x)]
+
+    print(len(femaleFFM))
+    print(len(maleFFM))
+    dis = [femaleFFM, maleFFM]
+    figure = plt.figure(figsize=(9,6))
+    ax = figure.add_subplot(111)
+    ax.set_yticklabels(['Female','Male'])
+    plt.title("Biceps Muscle Measurement (mm) by Sex")
     ax.get_xaxis().tick_bottom()
     ax.get_yaxis().tick_left()
     bp_low = ax.boxplot(dis, patch_artist = True, vert=0)
