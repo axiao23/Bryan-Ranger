@@ -26,7 +26,8 @@ df = pandas.concat([mm_avg, hp_avg], axis=1)
 #Flags
 PerFFMxMuscle = False
 FFMxMuscle = False
-Demo = True
+Demo = False
+Race = True
 
 if PerFFMxMuscle == True:
     lowFFM = []
@@ -112,14 +113,18 @@ if Demo == True:
 
     femaleFFM = []
     maleFFM = []
+    female_count = 0
+    male_count = 0
 #Change the muscle to BM, BA, AM, AA, QM, or QA
-    muscle = 'BM'
+    muscle = 'QA'
 
     for index, row in df.iterrows():
         if row['Sex'] == 'F':
             femaleFFM.append(row[muscle])
+            female_count +=1 
         if row['Sex'] == 'M':
             maleFFM.append(row[muscle])
+            male_count +=1 
 
     femaleFFM = [x for x in femaleFFM if not math.isnan(x)]
     maleFFM = [x for x in maleFFM if not math.isnan(x)]
@@ -129,8 +134,44 @@ if Demo == True:
     dis = [femaleFFM, maleFFM]
     figure = plt.figure(figsize=(9,6))
     ax = figure.add_subplot(111)
-    ax.set_yticklabels(['Female','Male'])
-    plt.title("Biceps Muscle Measurement (mm) by Sex")
+    ax.set_yticklabels([f'Female (n={female_count})',f'Male (n={male_count})'])
+    plt.title("Quadriceps Adipose Measurement (mm) by Sex")
+    ax.get_xaxis().tick_bottom()
+    ax.get_yaxis().tick_left()
+    bp_low = ax.boxplot(dis, patch_artist = True, vert=0)
+    plt.show()
+
+if Race==True:
+    white = []
+    black = []
+    other = []
+    white_count = 0
+    black_count = 0
+    other_count = 0
+
+    #Change the muscle to BM, BA, AM, AA, QM, or QA
+    muscle = 'QA'
+
+    for index, row in df.iterrows():
+        if row['Race'] == 'White':
+            white.append(row[muscle])
+            white_count +=1 
+        if row['Race'] == 'Black':
+            black.append(row[muscle])
+            black_count +=1 
+        if row['Race'] == 'Other':
+            other.append(row[muscle])
+            other_count +=1 
+
+
+    white = [x for x in white if not math.isnan(x)]
+    black = [x for x in black if not math.isnan(x)]
+    other = [x for x in other if not math.isnan(x)]
+    dis = [white, black, other]
+    figure = plt.figure(figsize=(9,6))
+    ax = figure.add_subplot(111)
+    ax.set_yticklabels([f'White (n={white_count})',f'Black (n={black_count})', f'Other (n={other_count})'])
+    plt.title("Quadriceps Adipose Measurement (mm) by Race")
     ax.get_xaxis().tick_bottom()
     ax.get_yaxis().tick_left()
     bp_low = ax.boxplot(dis, patch_artist = True, vert=0)
