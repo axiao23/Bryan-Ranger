@@ -7,4 +7,6 @@ Dr. Bryan Ranger's Lab at Boston College.
 "clinical_data" = UMN dataset original not cropped <br>
 "local_data" = phantom and clinical data cropped and preprocessed <br>
 "preprocess" = used to process UMN data <br>
+- muscle.ipynb = Hayo's ENGR32220 project, masking using cv2 operations <br>
+- initial_crop.ipynb = cropping UMN dataset <br>
 
