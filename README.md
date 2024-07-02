@@ -1,7 +1,7 @@
 # Bryan-Ranger
 Dr. Bryan Ranger's Lab at Boston College.
 
-"UNet" = conventional Unet using phantom data <br>
+"UNet" = conventional Unet <br>
 "body_comp" = statistical analysis of FFT FM and muscle thickness <br>
 "gdrive" = API attempt to synch google drive with github <br>
 "clinical_data" = UMN dataset <br>
