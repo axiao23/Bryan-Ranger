@@ -18,7 +18,8 @@ import pandas as pd
 
 class Muscle(Dataset):
   def __init__(self, train = True, transformX = None, transformY = None):
-    self.pixel_file = pd.read_csv('../local_data/300_train.csv')
+    # self.pixel_file = pd.read_csv('../local_data/300_train.csv')
+    self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UMN_train.csv')
     self.transformX = transformX
     self.transformY = transformY
     self.train = train
@@ -34,14 +35,14 @@ class Muscle(Dataset):
     return len(self.validation_data)
 
   def __getitem__(self, index):
-    train_path = '../local_data/train_data'
-
+    # train_path = '../local_data/train_data'
+    train_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UM_masked'
     if self.train:
       imx_name = os.path.join(train_path, self.train_data.iloc[index, 1])
-      imy_name = os.path.join(train_path, self.train_data.iloc[index, 1].replace('.jpeg','_mask.jpg'))
+      imy_name = os.path.join(train_path, self.train_data.iloc[index, 1].replace('.jpg','_m.jpg'))
     else:
       imx_name = os.path.join(train_path, self.validation_data.iloc[index, 1])
-      imy_name = os.path.join(train_path, self.validation_data.iloc[index, 1].replace('.jpeg','_mask.jpg'))
+      imy_name = os.path.join(train_path, self.validation_data.iloc[index, 1].replace('.jpg','_m.jpg'))
 
     # original image
     imx = Image.open(imx_name)
