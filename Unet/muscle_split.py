@@ -8,7 +8,8 @@ from torch.utils.data import Dataset, DataLoader
 
 class Muscle(Dataset):
     def __init__(self, split='train', transformX=None, transformY=None):
-        self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UMN_train.csv')
+        self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/300_train.csv')
+        # self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UMN_train.csv')
         self.transformX = transformX
         self.transformY = transformY
         self.split = split
@@ -26,7 +27,8 @@ class Muscle(Dataset):
             return len(self.test_data)
 
     def __getitem__(self, index):
-        train_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UM_masked'
+        train_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/train_data'
+        # train_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UM_masked'
 
         if self.split == 'train':
             data = self.train_data
@@ -36,12 +38,19 @@ class Muscle(Dataset):
             data = self.test_data
 
         imx_name = os.path.join(train_path, data.iloc[index, 1])
-        imy_name = os.path.join(train_path, data.iloc[index, 1].replace('.jpg', '_m.jpg'))
+        # imy_name = os.path.join(train_path, data.iloc[index, 1].replace('.jpg', '_m.jpg'))
+        imy_name = os.path.join(train_path, data.iloc[index, 1].replace('.jpeg','_mask.jpg'))
+
+        print(f"Trying to open image: {imx_name} and mask: {imy_name}")
+
+        if not os.path.exists(imx_name):
+            print(f"Image file does not exist: {imx_name}")
+        if not os.path.exists(imy_name):
+            print(f"Mask file does not exist: {imy_name}")
 
         try:
             # Original image
             imx = Image.open(imx_name)
-
             # Mask for the image
             imy = Image.open(imy_name).convert('L')
         except Exception as e:
