@@ -8,21 +8,36 @@ from torch.utils.data import Dataset, DataLoader
 
 class Muscle(Dataset):
     def __init__(self, split='train', transformX=None, transformY=None):
+        
+        # only clinical or phantom 
         # self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UMN_train.csv')
         # self.pixel_file = pd.read_csv('/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/300_train.csv')
 
+        # clinical and phantom datasets train + test 
         train_val_file_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/phantom.csv'
-        test_file_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UMN_train.csv'
-
+        test_file_path = '//Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/ABS'
         train_val_data = pd.read_csv(train_val_file_path)
         self.test_data = pd.read_csv(test_file_path)
+
+        # combine clinical and phantom datasets 
+        
 
         self.transformX = transformX
         self.transformY = transformY
         self.split = split
 
-        print(f"Total data size: {len(train_val_data)}")
+        # only clinical or phantom 
+        # train_val_data, self.test_data = train_test_split(self.pixel_file, test_size=0.2, random_state=5)
+        # self.train_data, self.validation_data = train_test_split(train_val_data, test_size=0.25, random_state=5)  # 0.25 * 0.8 = 0.2
+        # print(f"Total data size: {len(train_val_data)}")
+        # if self.split in ['train', 'validation']:
+        #     print(f"Training set size: {len(self.train_data)}")
+        #     print(f"Validation set size: {len(self.validation_data)}")
+        # elif self.split == 'test':
+        #     print(f"Test set size: {len(self.test_data)}")
 
+        # clinical and phantom datasets train + test 
+        print(f"Total data size: {len(train_val_data)}")
         if self.split in ['train', 'validation']:
             self.train_data, self.validation_data = train_test_split(train_val_data, test_size=0.2, random_state=5)
             print(f"Training set size: {len(self.train_data)}")
@@ -30,8 +45,16 @@ class Muscle(Dataset):
         elif self.split == 'test':
             print(f"Test set size: {len(self.test_data)}")
 
-        # train_val_data, self.test_data = train_test_split(self.pixel_file, test_size=0.2, random_state=5)
-        # self.train_data, self.validation_data = train_test_split(train_val_data, test_size=0.25, random_state=5)  # 0.25 * 0.8 = 0.2
+        # combine clinical and phantom datasets 
+        train_val_data, self.test_data = train_test_split(self.pixel_file, test_size=0.2, random_state=5)
+        self.train_data, self.validation_data = train_test_split(train_val_data, test_size=0.25, random_state=5)  # 0.25 * 0.8 = 0.2
+
+        print(f"Total data size: {len(train_val_data)}")
+        if self.split in ['train', 'validation']:
+            print(f"Training set size: {len(self.train_data)}")
+            print(f"Validation set size: {len(self.validation_data)}")
+        elif self.split == 'test':
+            print(f"Test set size: {len(self.test_data)}")
 
     def __len__(self):
         if self.split == 'train':
@@ -42,25 +65,41 @@ class Muscle(Dataset):
             return len(self.test_data)
 
     def __getitem__(self, index):
-        train_val_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/phantom'
+        train_val_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/train_data'
         test_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UM_masked'
-
+        
         # train_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/train_data'
         # train_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UM_masked'
         
         if self.split == 'train':
             data = self.train_data
-            imx_name = os.path.join(train_val_path, data.iloc[index, 1])
-            imy_name = os.path.join(train_val_path, data.iloc[index, 1].replace('.jpeg','_mask.jpg'))
+            base_path =  train_val_path 
         elif self.split == 'validation':
             data = self.validation_data
-            imx_name = os.path.join(train_val_path, data.iloc[index, 1])
-            imy_name = os.path.join(train_val_path, data.iloc[index, 1].replace('.jpeg','_mask.jpg'))
+            base_path =  train_val_path 
         else:  # self.split == 'test'
             data = self.test_data
-            imx_name = os.path.join(test_path, data.iloc[index, 1])
-            imy_name = os.path.join(test_path, data.iloc[index, 1].replace('.jpg', '_m.jpg'))
+            base_path = test_path 
+            
+            # new_images_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UM_masked'  # Directory containing the new images
+            # new_images = []
+            # for filename in os.listdir(new_images_path):
+            #     if filename.endswith(".jpg") or filename.endswith(".png"):  # Add other file extensions if needed
+            #         img_path = os.path.join(new_images_path, filename)
+            #         new_images.append(img_path)
+            #     if len(new_images) == 60:
+            #         break
+            # # Combine the new images with the existing test_data
+            # base_path.extend(new_images)
     
+        image_name = data.iloc[index, 1]
+        if ".jpeg" in image_name:
+            imx_name = os.path.join(base_path, image_name)
+            imy_name = os.path.join(base_path, image_name.replace('.jpeg', '_mask.jpg'))
+        else:
+            imx_name = os.path.join(base_path, image_name)
+            imy_name = os.path.join(base_path, image_name.replace('.jpg', '_m.jpg'))
+                 
         if not os.path.exists(imx_name):
             print(f"Image file does not exist: {imx_name}")
         if not os.path.exists(imy_name):

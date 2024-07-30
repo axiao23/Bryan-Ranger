@@ -6,6 +6,9 @@ Dr. Bryan Ranger's Lab at Boston College.
 "clinical_data" = UMN dataset <br>
 - UM = original UMN dataset and cropped, experimental dataset, not useful 
 - UM_masked = UMN dataset scropped and masks for models, useful 
+- ABS = UMN only abs 
+- BICEPS = UMN only biceps 
+- QUAD = UMN only quads
 "local_data" = phantom and clinical data cropped and preprocessed <br>
 
 "preprocess" = used to process UMN data <br>
