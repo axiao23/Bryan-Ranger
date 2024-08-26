@@ -15,7 +15,7 @@ class Muscle(Dataset):
 
         # # clinical and phantom datasets train + test 
         train_val_file_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UMN_train.csv'
-        test_file_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/300_train.csv'
+        test_file_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/inf_abs.csv'
         train_val_data = pd.read_csv(train_val_file_path)
         self.test_data = pd.read_csv(test_file_path)
         
@@ -65,7 +65,7 @@ class Muscle(Dataset):
             return len(self.test_data)
 
     def __getitem__(self, index):
-        test_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/train_data'
+        test_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/bw_infant_ar'
         train_val_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/ABS'
         
         # # train_path = '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/train_data'
