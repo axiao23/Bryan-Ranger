@@ -1,7 +1,7 @@
 # Bryan-Ranger
 Dr. Bryan Ranger's Lab at Boston College.
 
-**"UNet" = conventional + BT-Unet **<br>
+**"UNet" = conventional + BT-Unet** <br>
 - Yi's Unet model
 - Unet with phantom + clinical data
 - BT-Net work 
