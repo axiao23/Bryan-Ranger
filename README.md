@@ -6,7 +6,7 @@ Dr. Bryan Ranger's Lab at Boston College.
 - Unet with phantom + clinical data
 - BT-Net work 
 
-</ins>"body_comp" = statistical analysis of FFT FM and muscle thickness</ins> <be>
+</ins>"body_comp" = statistical analysis of FFT FM and muscle thickness</ins> <br>
 
 </ins>"clinical_data" = UMN dataset</ins> <br>
 - UM = original UMN dataset and cropped, experimental dataset, not useful 
