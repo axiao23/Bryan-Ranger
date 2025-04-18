@@ -14,9 +14,8 @@ class Muscle(Dataset):
         transformY=None,
         validation_set_size=0.2,
         test_set_size=0.1,
-        # Base paths for your images/masks
-        train_val_path='/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/abs_bw',
-        test_path='/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/bw_infant_ar'
+        # Base path for your images/masks
+        data_path='/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/abs_neonatal_bw'
     ):
         """
         Args:
@@ -25,21 +24,19 @@ class Muscle(Dataset):
             transformY: Transform pipeline for the mask images.
             validation_set_size: Fraction of total data reserved for validation.
             test_set_size: Fraction of total data reserved for testing.
-            train_val_path: Base directory where training/validation images + masks are stored.
-            test_path: Base directory where test images + masks are stored.
+            data_path: Base directory where all images and masks (train, validation, and test) are stored.
         """
 
         self.split = split
         self.transformX = transformX
         self.transformY = transformY
 
-        # Store the base paths (where images/masks actually live on disk).
-        self.train_val_path = train_val_path
-        self.test_path = test_path
+        # Store the base path (where images/masks actually live on disk).
+        self.data_path = data_path
 
         # Read the CSV file that has all (or most) of your clinical data.
         self.pixel_file = pd.read_csv(
-            '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/clinical_data/UMN_train.csv'
+            '/Users/taliacho/Downloads/Ranger/Bryan-Ranger/local_data/abs_neonatal.csv'
         )
 
         # -----------------------------
@@ -55,10 +52,6 @@ class Muscle(Dataset):
         )
 
         # Next, figure out how much of TEMP should be validation vs. test.
-        # Example: if validation_set_size=0.1 and test_set_size=0.1,
-        # then total temp_size=0.2. 
-        # So validation should be 0.1 / 0.2 = 0.5 of the temp_data,
-        # and test the other 0.5.
         validation_ratio_in_temp = validation_set_size / temp_size if temp_size > 0 else 0.0
         self.validation_data, self.test_data = train_test_split(
             temp_data,
@@ -71,13 +64,10 @@ class Muscle(Dataset):
         # -----------------------------
         if self.split == "train":
             self.data = self.train_data
-            self.base_path = self.train_val_path
         elif self.split == "validation":
             self.data = self.validation_data
-            self.base_path = self.train_val_path
         elif self.split == "test":
             self.data = self.test_data
-            self.base_path = self.test_path
         else:
             raise ValueError(f"Unknown split: {self.split}")
 
@@ -95,20 +85,17 @@ class Muscle(Dataset):
         # -----------------------------
         # 1) Grab the filename from CSV
         # -----------------------------
-        # Let's assume column 1 (index=1) in self.data has the filename.
         image_name = self.data.iloc[index, 1]
 
         # -----------------------------
-        # 2) Construct full paths
+        # 2) Construct full path for image and mask
         # -----------------------------
         if ".jpeg" in image_name.lower():
-            imx_name = os.path.join(self.base_path, image_name)
-            # Fix a small typo: ".jpeg" replaced with ".jpeg" in the string if needed
-            # or image_name.replace('.jpeg', '_mask.jpg')
-            imy_name = os.path.join(self.base_path, image_name.replace('.jpeg', '_mask.jpg'))
+            imx_name = os.path.join(self.data_path, image_name)
+            imy_name = os.path.join(self.data_path, image_name.replace('.jpeg', '_mask.jpg'))
         else:
-            imx_name = os.path.join(self.base_path, image_name)
-            imy_name = os.path.join(self.base_path, image_name.replace('.jpg', '_m.jpg'))
+            imx_name = os.path.join(self.data_path, image_name)
+            imy_name = os.path.join(self.data_path, image_name.replace('.jpg', '_m.jpg'))
 
         # -----------------------------
         # 3) Check if files exist
