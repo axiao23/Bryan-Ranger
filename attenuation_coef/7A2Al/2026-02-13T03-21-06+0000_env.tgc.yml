@@ -1,0 +1,10 @@
+# tgc curves per frame
+
+frames: 1
+
+timestamp: 376609435350 
+  - { 6.00mm, 14.68dB }
+  - { 18.00mm, 17.63dB }
+  - { 30.00mm, 20.92dB }
+  - { 42.00mm, 35.92dB }
+  - { 54.00mm, 39.46dB }
