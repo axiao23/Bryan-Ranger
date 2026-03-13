@@ -1,13 +1,13 @@
 # raw data parameters
 
 software version: 12.2.1-766
-iso time/date: 2026-02-13T02-04-51+0000
+iso time/date: 2026-02-13T02-05-04+0000
 probe:
   version: hd3
   elements: 192
   pitch: 130.00
-frames: 1
-frame rate: 3.98 Hz
+frames: 3
+frame rate: 16.09 Hz
 transmit frequency: 14.00 MHz
 imaging depth: 28.50 mm
 focal depth: 14.25 mm
