@@ -1,0 +1,430 @@
+# raw data parameters
+
+software version: 12.2.1-766
+iso time/date: 2026-02-13T02-05-04+0000
+probe:
+  version: hd3
+  elements: 192
+  pitch: 130.00
+frames: 3
+frame rate: 16.09 Hz
+transmit frequency: 14.00 MHz
+imaging depth: 28.50 mm
+focal depth: 14.25 mm
+auto gain: on
+mla: 8
+tgc: 
+  - { 0.00mm, 10.00dB }
+  - { 28.50mm, 35.00dB }
+size: {samples per line: 560,number of lines: 384,sample size: 1 bytes}
+type: B pre-scan
+compression: none
+sampling rate: 15 MHz
+delay samples: 6
+lines:
+  - {rx element: 0,tx element: 1.7454308093994777,angle: 0 °,duration: 78 µs}
+  - {rx element: 0.49869451697127931,tx element: 1.7454308093994777,angle: 0 °,duration: 78 µs}
+  - {rx element: 0.99738903394255862,tx element: 1.7454308093994777,angle: 0 °,duration: 78 µs}
+  - {rx element: 1.4960835509138379,tx element: 1.7454308093994777,angle: 0 °,duration: 78 µs}
+  - {rx element: 1.9947780678851175,tx element: 2.7428198433420361,angle: 0 °,duration: 78 µs}
+  - {rx element: 2.4934725848563968,tx element: 2.7428198433420361,angle: 0 °,duration: 78 µs}
+  - {rx element: 2.9921671018276763,tx element: 2.7428198433420361,angle: 0 °,duration: 78 µs}
+  - {rx element: 3.4908616187989554,tx element: 2.7428198433420361,angle: 0 °,duration: 78 µs}
+  - {rx element: 3.9895561357702349,tx element: 4.7375979112271533,angle: 0 °,duration: 78 µs}
+  - {rx element: 4.488250652741514,tx element: 4.7375979112271533,angle: 0 °,duration: 78 µs}
+  - {rx element: 4.9869451697127936,tx element: 4.7375979112271533,angle: 0 °,duration: 78 µs}
+  - {rx element: 5.4856396866840731,tx element: 4.7375979112271533,angle: 0 °,duration: 78 µs}
+  - {rx element: 5.9843342036553517,tx element: 6.7323759791122715,angle: 0 °,duration: 78 µs}
+  - {rx element: 6.4830287206266313,tx element: 6.7323759791122715,angle: 0 °,duration: 78 µs}
+  - {rx element: 6.9817232375979108,tx element: 6.7323759791122715,angle: 0 °,duration: 78 µs}
+  - {rx element: 7.4804177545691903,tx element: 6.7323759791122715,angle: 0 °,duration: 78 µs}
+  - {rx element: 7.979112271540469,tx element: 8.7271540469973878,angle: 0 °,duration: 78 µs}
+  - {rx element: 8.4778067885117494,tx element: 8.7271540469973878,angle: 0 °,duration: 78 µs}
+  - {rx element: 8.976501305483028,tx element: 8.7271540469973878,angle: 0 °,duration: 78 µs}
+  - {rx element: 9.4751958224543067,tx element: 8.7271540469973878,angle: 0 °,duration: 78 µs}
+  - {rx element: 9.9738903394255871,tx element: 10.721932114882506,angle: 0 °,duration: 78 µs}
+  - {rx element: 10.472584856396866,tx element: 10.721932114882506,angle: 0 °,duration: 78 µs}
+  - {rx element: 10.971279373368144,tx element: 10.721932114882506,angle: 0 °,duration: 78 µs}
+  - {rx element: 11.469973890339425,tx element: 10.721932114882506,angle: 0 °,duration: 78 µs}
+  - {rx element: 11.968668407310703,tx element: 12.716710182767622,angle: 0 °,duration: 78 µs}
+  - {rx element: 12.467362924281982,tx element: 12.716710182767622,angle: 0 °,duration: 78 µs}
+  - {rx element: 12.966057441253263,tx element: 12.716710182767622,angle: 0 °,duration: 78 µs}
+  - {rx element: 13.464751958224541,tx element: 12.716710182767622,angle: 0 °,duration: 78 µs}
+  - {rx element: 13.963446475195822,tx element: 14.711488250652742,angle: 0 °,duration: 78 µs}
+  - {rx element: 14.4621409921671,tx element: 14.711488250652742,angle: 0 °,duration: 78 µs}
+  - {rx element: 14.960835509138381,tx element: 14.711488250652742,angle: 0 °,duration: 78 µs}
+  - {rx element: 15.459530026109659,tx element: 14.711488250652742,angle: 0 °,duration: 78 µs}
+  - {rx element: 15.95822454308094,tx element: 16.706266318537857,angle: 0 °,duration: 78 µs}
+  - {rx element: 16.456919060052218,tx element: 16.706266318537857,angle: 0 °,duration: 78 µs}
+  - {rx element: 16.955613577023499,tx element: 16.706266318537857,angle: 0 °,duration: 78 µs}
+  - {rx element: 17.454308093994776,tx element: 16.706266318537857,angle: 0 °,duration: 78 µs}
+  - {rx element: 17.953002610966053,tx element: 18.701044386422971,angle: 0 °,duration: 78 µs}
+  - {rx element: 18.451697127937333,tx element: 18.701044386422971,angle: 0 °,duration: 78 µs}
+  - {rx element: 18.950391644908613,tx element: 18.701044386422971,angle: 0 °,duration: 78 µs}
+  - {rx element: 19.44908616187989,tx element: 18.701044386422971,angle: 0 °,duration: 78 µs}
+  - {rx element: 19.947780678851171,tx element: 20.695822454308093,angle: 0 °,duration: 78 µs}
+  - {rx element: 20.446475195822451,tx element: 20.695822454308093,angle: 0 °,duration: 78 µs}
+  - {rx element: 20.945169712793732,tx element: 20.695822454308093,angle: 0 °,duration: 78 µs}
+  - {rx element: 21.443864229765008,tx element: 20.695822454308093,angle: 0 °,duration: 78 µs}
+  - {rx element: 21.942558746736289,tx element: 22.690600522193208,angle: 0 °,duration: 78 µs}
+  - {rx element: 22.441253263707569,tx element: 22.690600522193208,angle: 0 °,duration: 78 µs}
+  - {rx element: 22.93994778067885,tx element: 22.690600522193208,angle: 0 °,duration: 78 µs}
+  - {rx element: 23.438642297650127,tx element: 22.690600522193208,angle: 0 °,duration: 78 µs}
+  - {rx element: 23.937336814621407,tx element: 24.685378590078326,angle: 0 °,duration: 78 µs}
+  - {rx element: 24.436031331592687,tx element: 24.685378590078326,angle: 0 °,duration: 78 µs}
+  - {rx element: 24.934725848563968,tx element: 24.685378590078326,angle: 0 °,duration: 78 µs}
+  - {rx element: 25.433420365535245,tx element: 24.685378590078326,angle: 0 °,duration: 78 µs}
+  - {rx element: 25.932114882506522,tx element: 26.680156657963444,angle: 0 °,duration: 78 µs}
+  - {rx element: 26.430809399477802,tx element: 26.680156657963444,angle: 0 °,duration: 78 µs}
+  - {rx element: 26.929503916449082,tx element: 26.680156657963444,angle: 0 °,duration: 78 µs}
+  - {rx element: 27.428198433420359,tx element: 26.680156657963444,angle: 0 °,duration: 78 µs}
+  - {rx element: 27.92689295039164,tx element: 28.674934725848559,angle: 0 °,duration: 78 µs}
+  - {rx element: 28.42558746736292,tx element: 28.674934725848559,angle: 0 °,duration: 78 µs}
+  - {rx element: 28.924281984334201,tx element: 28.674934725848559,angle: 0 °,duration: 78 µs}
+  - {rx element: 29.422976501305477,tx element: 28.674934725848559,angle: 0 °,duration: 78 µs}
+  - {rx element: 29.921671018276758,tx element: 30.669712793733677,angle: 0 °,duration: 78 µs}
+  - {rx element: 30.420365535248038,tx element: 30.669712793733677,angle: 0 °,duration: 78 µs}
+  - {rx element: 30.919060052219319,tx element: 30.669712793733677,angle: 0 °,duration: 78 µs}
+  - {rx element: 31.417754569190596,tx element: 30.669712793733677,angle: 0 °,duration: 78 µs}
+  - {rx element: 31.916449086161876,tx element: 32.664490861618795,angle: 0 °,duration: 78 µs}
+  - {rx element: 32.41514360313316,tx element: 32.664490861618795,angle: 0 °,duration: 78 µs}
+  - {rx element: 32.913838120104437,tx element: 32.664490861618795,angle: 0 °,duration: 78 µs}
+  - {rx element: 33.412532637075714,tx element: 32.664490861618795,angle: 0 °,duration: 78 µs}
+  - {rx element: 33.911227154046998,tx element: 34.659268929503909,angle: 0 °,duration: 78 µs}
+  - {rx element: 34.409921671018274,tx element: 34.659268929503909,angle: 0 °,duration: 78 µs}
+  - {rx element: 34.908616187989551,tx element: 34.659268929503909,angle: 0 °,duration: 78 µs}
+  - {rx element: 35.407310704960835,tx element: 34.659268929503909,angle: 0 °,duration: 78 µs}
+  - {rx element: 35.906005221932112,tx element: 36.654046997389031,angle: 0 °,duration: 78 µs}
+  - {rx element: 36.404699738903389,tx element: 36.654046997389031,angle: 0 °,duration: 78 µs}
+  - {rx element: 36.903394255874666,tx element: 36.654046997389031,angle: 0 °,duration: 78 µs}
+  - {rx element: 37.40208877284595,tx element: 36.654046997389031,angle: 0 °,duration: 78 µs}
+  - {rx element: 37.900783289817227,tx element: 38.648825065274146,angle: 0 °,duration: 78 µs}
+  - {rx element: 38.399477806788504,tx element: 38.648825065274146,angle: 0 °,duration: 78 µs}
+  - {rx element: 38.898172323759781,tx element: 38.648825065274146,angle: 0 °,duration: 78 µs}
+  - {rx element: 39.396866840731064,tx element: 38.648825065274146,angle: 0 °,duration: 78 µs}
+  - {rx element: 39.895561357702348,tx element: 40.64360313315926,angle: 0 °,duration: 78 µs}
+  - {rx element: 40.394255874673625,tx element: 40.64360313315926,angle: 0 °,duration: 78 µs}
+  - {rx element: 40.892950391644902,tx element: 40.64360313315926,angle: 0 °,duration: 78 µs}
+  - {rx element: 41.391644908616186,tx element: 40.64360313315926,angle: 0 °,duration: 78 µs}
+  - {rx element: 41.890339425587463,tx element: 42.638381201044382,angle: 0 °,duration: 78 µs}
+  - {rx element: 42.38903394255874,tx element: 42.638381201044382,angle: 0 °,duration: 78 µs}
+  - {rx element: 42.887728459530017,tx element: 42.638381201044382,angle: 0 °,duration: 78 µs}
+  - {rx element: 43.386422976501301,tx element: 42.638381201044382,angle: 0 °,duration: 78 µs}
+  - {rx element: 43.885117493472585,tx element: 44.633159268929504,angle: 0 °,duration: 78 µs}
+  - {rx element: 44.383812010443862,tx element: 44.633159268929504,angle: 0 °,duration: 78 µs}
+  - {rx element: 44.882506527415138,tx element: 44.633159268929504,angle: 0 °,duration: 78 µs}
+  - {rx element: 45.381201044386422,tx element: 44.633159268929504,angle: 0 °,duration: 78 µs}
+  - {rx element: 45.879895561357699,tx element: 46.627937336814611,angle: 0 °,duration: 78 µs}
+  - {rx element: 46.378590078328976,tx element: 46.627937336814611,angle: 0 °,duration: 78 µs}
+  - {rx element: 46.877284595300253,tx element: 46.627937336814611,angle: 0 °,duration: 78 µs}
+  - {rx element: 47.375979112271537,tx element: 46.627937336814611,angle: 0 °,duration: 78 µs}
+  - {rx element: 47.874673629242814,tx element: 48.622715404699733,angle: 0 °,duration: 78 µs}
+  - {rx element: 48.373368146214091,tx element: 48.622715404699733,angle: 0 °,duration: 78 µs}
+  - {rx element: 48.872062663185368,tx element: 48.622715404699733,angle: 0 °,duration: 78 µs}
+  - {rx element: 49.370757180156652,tx element: 48.622715404699733,angle: 0 °,duration: 78 µs}
+  - {rx element: 49.869451697127936,tx element: 50.617493472584854,angle: 0 °,duration: 78 µs}
+  - {rx element: 50.368146214099212,tx element: 50.617493472584854,angle: 0 °,duration: 78 µs}
+  - {rx element: 50.866840731070489,tx element: 50.617493472584854,angle: 0 °,duration: 78 µs}
+  - {rx element: 51.365535248041773,tx element: 50.617493472584854,angle: 0 °,duration: 78 µs}
+  - {rx element: 51.86422976501305,tx element: 52.612271540469962,angle: 0 °,duration: 78 µs}
+  - {rx element: 52.362924281984327,tx element: 52.612271540469962,angle: 0 °,duration: 78 µs}
+  - {rx element: 52.861618798955604,tx element: 52.612271540469962,angle: 0 °,duration: 78 µs}
+  - {rx element: 53.360313315926888,tx element: 52.612271540469962,angle: 0 °,duration: 78 µs}
+  - {rx element: 53.859007832898165,tx element: 54.607049608355084,angle: 0 °,duration: 78 µs}
+  - {rx element: 54.357702349869442,tx element: 54.607049608355084,angle: 0 °,duration: 78 µs}
+  - {rx element: 54.856396866840718,tx element: 54.607049608355084,angle: 0 °,duration: 78 µs}
+  - {rx element: 55.355091383812002,tx element: 54.607049608355084,angle: 0 °,duration: 78 µs}
+  - {rx element: 55.853785900783286,tx element: 56.601827676240205,angle: 0 °,duration: 78 µs}
+  - {rx element: 56.352480417754563,tx element: 56.601827676240205,angle: 0 °,duration: 78 µs}
+  - {rx element: 56.85117493472584,tx element: 56.601827676240205,angle: 0 °,duration: 78 µs}
+  - {rx element: 57.349869451697124,tx element: 56.601827676240205,angle: 0 °,duration: 78 µs}
+  - {rx element: 57.848563968668401,tx element: 58.596605744125327,angle: 0 °,duration: 78 µs}
+  - {rx element: 58.347258485639678,tx element: 58.596605744125327,angle: 0 °,duration: 78 µs}
+  - {rx element: 58.845953002610955,tx element: 58.596605744125327,angle: 0 °,duration: 78 µs}
+  - {rx element: 59.344647519582239,tx element: 58.596605744125327,angle: 0 °,duration: 78 µs}
+  - {rx element: 59.843342036553523,tx element: 60.591383812010442,angle: 0 °,duration: 78 µs}
+  - {rx element: 60.3420365535248,tx element: 60.591383812010442,angle: 0 °,duration: 78 µs}
+  - {rx element: 60.840731070496076,tx element: 60.591383812010442,angle: 0 °,duration: 78 µs}
+  - {rx element: 61.33942558746736,tx element: 60.591383812010442,angle: 0 °,duration: 78 µs}
+  - {rx element: 61.838120104438637,tx element: 62.586161879895556,angle: 0 °,duration: 78 µs}
+  - {rx element: 62.336814621409914,tx element: 62.586161879895556,angle: 0 °,duration: 78 µs}
+  - {rx element: 62.835509138381191,tx element: 62.586161879895556,angle: 0 °,duration: 78 µs}
+  - {rx element: 63.334203655352475,tx element: 62.586161879895556,angle: 0 °,duration: 78 µs}
+  - {rx element: 63.832898172323752,tx element: 64.580939947780678,angle: 0 °,duration: 78 µs}
+  - {rx element: 64.331592689295036,tx element: 64.580939947780678,angle: 0 °,duration: 78 µs}
+  - {rx element: 64.830287206266306,tx element: 64.580939947780678,angle: 0 °,duration: 78 µs}
+  - {rx element: 65.32898172323759,tx element: 64.580939947780678,angle: 0 °,duration: 78 µs}
+  - {rx element: 65.827676240208874,tx element: 66.575718015665785,angle: 0 °,duration: 78 µs}
+  - {rx element: 66.326370757180158,tx element: 66.575718015665785,angle: 0 °,duration: 78 µs}
+  - {rx element: 66.825065274151427,tx element: 66.575718015665785,angle: 0 °,duration: 78 µs}
+  - {rx element: 67.323759791122711,tx element: 66.575718015665785,angle: 0 °,duration: 78 µs}
+  - {rx element: 67.822454308093995,tx element: 68.570496083550907,angle: 0 °,duration: 78 µs}
+  - {rx element: 68.321148825065279,tx element: 68.570496083550907,angle: 0 °,duration: 78 µs}
+  - {rx element: 68.819843342036549,tx element: 68.570496083550907,angle: 0 °,duration: 78 µs}
+  - {rx element: 69.318537859007833,tx element: 68.570496083550907,angle: 0 °,duration: 78 µs}
+  - {rx element: 69.817232375979103,tx element: 70.565274151436029,angle: 0 °,duration: 78 µs}
+  - {rx element: 70.315926892950387,tx element: 70.565274151436029,angle: 0 °,duration: 78 µs}
+  - {rx element: 70.814621409921656,tx element: 70.565274151436029,angle: 0 °,duration: 78 µs}
+  - {rx element: 71.31331592689294,tx element: 70.565274151436029,angle: 0 °,duration: 78 µs}
+  - {rx element: 71.812010443864224,tx element: 72.560052219321136,angle: 0 °,duration: 78 µs}
+  - {rx element: 72.310704960835508,tx element: 72.560052219321136,angle: 0 °,duration: 78 µs}
+  - {rx element: 72.809399477806778,tx element: 72.560052219321136,angle: 0 °,duration: 78 µs}
+  - {rx element: 73.308093994778062,tx element: 72.560052219321136,angle: 0 °,duration: 78 µs}
+  - {rx element: 73.806788511749346,tx element: 74.554830287206258,angle: 0 °,duration: 78 µs}
+  - {rx element: 74.30548302872063,tx element: 74.554830287206258,angle: 0 °,duration: 78 µs}
+  - {rx element: 74.8041775456919,tx element: 74.554830287206258,angle: 0 °,duration: 78 µs}
+  - {rx element: 75.302872062663184,tx element: 74.554830287206258,angle: 0 °,duration: 78 µs}
+  - {rx element: 75.801566579634454,tx element: 76.54960835509138,angle: 0 °,duration: 78 µs}
+  - {rx element: 76.300261096605738,tx element: 76.54960835509138,angle: 0 °,duration: 78 µs}
+  - {rx element: 76.798955613577007,tx element: 76.54960835509138,angle: 0 °,duration: 78 µs}
+  - {rx element: 77.297650130548291,tx element: 76.54960835509138,angle: 0 °,duration: 78 µs}
+  - {rx element: 77.796344647519575,tx element: 78.544386422976487,angle: 0 °,duration: 78 µs}
+  - {rx element: 78.295039164490859,tx element: 78.544386422976487,angle: 0 °,duration: 78 µs}
+  - {rx element: 78.793733681462129,tx element: 78.544386422976487,angle: 0 °,duration: 78 µs}
+  - {rx element: 79.292428198433413,tx element: 78.544386422976487,angle: 0 °,duration: 78 µs}
+  - {rx element: 79.791122715404697,tx element: 80.539164490861609,angle: 0 °,duration: 78 µs}
+  - {rx element: 80.289817232375981,tx element: 80.539164490861609,angle: 0 °,duration: 78 µs}
+  - {rx element: 80.788511749347251,tx element: 80.539164490861609,angle: 0 °,duration: 78 µs}
+  - {rx element: 81.287206266318535,tx element: 80.539164490861609,angle: 0 °,duration: 78 µs}
+  - {rx element: 81.785900783289804,tx element: 82.53394255874673,angle: 0 °,duration: 78 µs}
+  - {rx element: 82.284595300261088,tx element: 82.53394255874673,angle: 0 °,duration: 78 µs}
+  - {rx element: 82.783289817232358,tx element: 82.53394255874673,angle: 0 °,duration: 78 µs}
+  - {rx element: 83.281984334203642,tx element: 82.53394255874673,angle: 0 °,duration: 78 µs}
+  - {rx element: 83.780678851174926,tx element: 84.528720626631838,angle: 0 °,duration: 78 µs}
+  - {rx element: 84.27937336814621,tx element: 84.528720626631838,angle: 0 °,duration: 78 µs}
+  - {rx element: 84.77806788511748,tx element: 84.528720626631838,angle: 0 °,duration: 78 µs}
+  - {rx element: 85.276762402088764,tx element: 84.528720626631838,angle: 0 °,duration: 78 µs}
+  - {rx element: 85.775456919060048,tx element: 86.52349869451696,angle: 0 °,duration: 78 µs}
+  - {rx element: 86.274151436031332,tx element: 86.52349869451696,angle: 0 °,duration: 78 µs}
+  - {rx element: 86.772845953002602,tx element: 86.52349869451696,angle: 0 °,duration: 78 µs}
+  - {rx element: 87.271540469973885,tx element: 86.52349869451696,angle: 0 °,duration: 78 µs}
+  - {rx element: 87.770234986945155,tx element: 88.518276762402081,angle: 0 °,duration: 78 µs}
+  - {rx element: 88.268929503916439,tx element: 88.518276762402081,angle: 0 °,duration: 78 µs}
+  - {rx element: 88.767624020887709,tx element: 88.518276762402081,angle: 0 °,duration: 78 µs}
+  - {rx element: 89.266318537858993,tx element: 88.518276762402081,angle: 0 °,duration: 78 µs}
+  - {rx element: 89.765013054830277,tx element: 90.513054830287189,angle: 0 °,duration: 78 µs}
+  - {rx element: 90.263707571801561,tx element: 90.513054830287189,angle: 0 °,duration: 78 µs}
+  - {rx element: 90.762402088772831,tx element: 90.513054830287189,angle: 0 °,duration: 78 µs}
+  - {rx element: 91.261096605744115,tx element: 90.513054830287189,angle: 0 °,duration: 78 µs}
+  - {rx element: 91.759791122715399,tx element: 92.50783289817231,angle: 0 °,duration: 78 µs}
+  - {rx element: 92.258485639686683,tx element: 92.50783289817231,angle: 0 °,duration: 78 µs}
+  - {rx element: 92.757180156657952,tx element: 92.50783289817231,angle: 0 °,duration: 78 µs}
+  - {rx element: 93.255874673629236,tx element: 92.50783289817231,angle: 0 °,duration: 78 µs}
+  - {rx element: 93.754569190600506,tx element: 94.502610966057432,angle: 0 °,duration: 78 µs}
+  - {rx element: 94.25326370757179,tx element: 94.502610966057432,angle: 0 °,duration: 78 µs}
+  - {rx element: 94.75195822454306,tx element: 94.502610966057432,angle: 0 °,duration: 78 µs}
+  - {rx element: 95.250652741514344,tx element: 94.502610966057432,angle: 0 °,duration: 78 µs}
+  - {rx element: 95.749347258485628,tx element: 96.497389033942554,angle: 0 °,duration: 78 µs}
+  - {rx element: 96.248041775456912,tx element: 96.497389033942554,angle: 0 °,duration: 78 µs}
+  - {rx element: 96.746736292428182,tx element: 96.497389033942554,angle: 0 °,duration: 78 µs}
+  - {rx element: 97.245430809399465,tx element: 96.497389033942554,angle: 0 °,duration: 78 µs}
+  - {rx element: 97.744125326370764,tx element: 98.492167101827675,angle: 0 °,duration: 78 µs}
+  - {rx element: 98.242819843342048,tx element: 98.492167101827675,angle: 0 °,duration: 78 µs}
+  - {rx element: 98.741514360313317,tx element: 98.492167101827675,angle: 0 °,duration: 78 µs}
+  - {rx element: 99.240208877284601,tx element: 98.492167101827675,angle: 0 °,duration: 78 µs}
+  - {rx element: 99.738903394255871,tx element: 100.4869451697128,angle: 0 °,duration: 78 µs}
+  - {rx element: 100.23759791122716,tx element: 100.4869451697128,angle: 0 °,duration: 78 µs}
+  - {rx element: 100.73629242819842,tx element: 100.4869451697128,angle: 0 °,duration: 78 µs}
+  - {rx element: 101.23498694516971,tx element: 100.4869451697128,angle: 0 °,duration: 78 µs}
+  - {rx element: 101.73368146214099,tx element: 102.48172323759792,angle: 0 °,duration: 78 µs}
+  - {rx element: 102.23237597911228,tx element: 102.48172323759792,angle: 0 °,duration: 78 µs}
+  - {rx element: 102.73107049608355,tx element: 102.48172323759792,angle: 0 °,duration: 78 µs}
+  - {rx element: 103.22976501305483,tx element: 102.48172323759792,angle: 0 °,duration: 78 µs}
+  - {rx element: 103.72845953002611,tx element: 104.47650130548303,angle: 0 °,duration: 78 µs}
+  - {rx element: 104.2271540469974,tx element: 104.47650130548303,angle: 0 °,duration: 78 µs}
+  - {rx element: 104.72584856396867,tx element: 104.47650130548303,angle: 0 °,duration: 78 µs}
+  - {rx element: 105.22454308093995,tx element: 104.47650130548303,angle: 0 °,duration: 78 µs}
+  - {rx element: 105.72323759791122,tx element: 106.47127937336813,angle: 0 °,duration: 78 µs}
+  - {rx element: 106.22193211488251,tx element: 106.47127937336813,angle: 0 °,duration: 78 µs}
+  - {rx element: 106.72062663185378,tx element: 106.47127937336813,angle: 0 °,duration: 78 µs}
+  - {rx element: 107.21932114882506,tx element: 106.47127937336813,angle: 0 °,duration: 78 µs}
+  - {rx element: 107.71801566579634,tx element: 108.46605744125327,angle: 0 °,duration: 78 µs}
+  - {rx element: 108.21671018276763,tx element: 108.46605744125327,angle: 0 °,duration: 78 µs}
+  - {rx element: 108.7154046997389,tx element: 108.46605744125327,angle: 0 °,duration: 78 µs}
+  - {rx element: 109.21409921671018,tx element: 108.46605744125327,angle: 0 °,duration: 78 µs}
+  - {rx element: 109.71279373368145,tx element: 110.46083550913836,angle: 0 °,duration: 78 µs}
+  - {rx element: 110.21148825065274,tx element: 110.46083550913836,angle: 0 °,duration: 78 µs}
+  - {rx element: 110.710182767624,tx element: 110.46083550913836,angle: 0 °,duration: 78 µs}
+  - {rx element: 111.20887728459529,tx element: 110.46083550913836,angle: 0 °,duration: 78 µs}
+  - {rx element: 111.70757180156657,tx element: 112.45561357702348,angle: 0 °,duration: 78 µs}
+  - {rx element: 112.20626631853786,tx element: 112.45561357702348,angle: 0 °,duration: 78 µs}
+  - {rx element: 112.70496083550913,tx element: 112.45561357702348,angle: 0 °,duration: 78 µs}
+  - {rx element: 113.20365535248041,tx element: 112.45561357702348,angle: 0 °,duration: 78 µs}
+  - {rx element: 113.70234986945168,tx element: 114.45039164490859,angle: 0 °,duration: 78 µs}
+  - {rx element: 114.20104438642296,tx element: 114.45039164490859,angle: 0 °,duration: 78 µs}
+  - {rx element: 114.69973890339423,tx element: 114.45039164490859,angle: 0 °,duration: 78 µs}
+  - {rx element: 115.19843342036552,tx element: 114.45039164490859,angle: 0 °,duration: 78 µs}
+  - {rx element: 115.6971279373368,tx element: 116.44516971279371,angle: 0 °,duration: 78 µs}
+  - {rx element: 116.19582245430809,tx element: 116.44516971279371,angle: 0 °,duration: 78 µs}
+  - {rx element: 116.69451697127936,tx element: 116.44516971279371,angle: 0 °,duration: 78 µs}
+  - {rx element: 117.19321148825064,tx element: 116.44516971279371,angle: 0 °,duration: 78 µs}
+  - {rx element: 117.69190600522191,tx element: 118.43994778067884,angle: 0 °,duration: 78 µs}
+  - {rx element: 118.19060052219319,tx element: 118.43994778067884,angle: 0 °,duration: 78 µs}
+  - {rx element: 118.68929503916446,tx element: 118.43994778067884,angle: 0 °,duration: 78 µs}
+  - {rx element: 119.18798955613575,tx element: 118.43994778067884,angle: 0 °,duration: 78 µs}
+  - {rx element: 119.68668407310703,tx element: 120.43472584856394,angle: 0 °,duration: 78 µs}
+  - {rx element: 120.18537859007832,tx element: 120.43472584856394,angle: 0 °,duration: 78 µs}
+  - {rx element: 120.68407310704958,tx element: 120.43472584856394,angle: 0 °,duration: 78 µs}
+  - {rx element: 121.18276762402087,tx element: 120.43472584856394,angle: 0 °,duration: 78 µs}
+  - {rx element: 121.68146214099214,tx element: 122.42950391644906,angle: 0 °,duration: 78 µs}
+  - {rx element: 122.18015665796342,tx element: 122.42950391644906,angle: 0 °,duration: 78 µs}
+  - {rx element: 122.67885117493469,tx element: 122.42950391644906,angle: 0 °,duration: 78 µs}
+  - {rx element: 123.17754569190598,tx element: 122.42950391644906,angle: 0 °,duration: 78 µs}
+  - {rx element: 123.67624020887726,tx element: 124.42428198433416,angle: 0 °,duration: 78 µs}
+  - {rx element: 124.17493472584854,tx element: 124.42428198433416,angle: 0 °,duration: 78 µs}
+  - {rx element: 124.67362924281981,tx element: 124.42428198433416,angle: 0 °,duration: 78 µs}
+  - {rx element: 125.1723237597911,tx element: 124.42428198433416,angle: 0 °,duration: 78 µs}
+  - {rx element: 125.67101827676237,tx element: 126.41906005221928,angle: 0 °,duration: 78 µs}
+  - {rx element: 126.16971279373365,tx element: 126.41906005221928,angle: 0 °,duration: 78 µs}
+  - {rx element: 126.66840731070492,tx element: 126.41906005221928,angle: 0 °,duration: 78 µs}
+  - {rx element: 127.16710182767621,tx element: 126.41906005221928,angle: 0 °,duration: 78 µs}
+  - {rx element: 127.66579634464749,tx element: 128.4138381201044,angle: 0 °,duration: 78 µs}
+  - {rx element: 128.16449086161876,tx element: 128.4138381201044,angle: 0 °,duration: 78 µs}
+  - {rx element: 128.66318537859004,tx element: 128.4138381201044,angle: 0 °,duration: 78 µs}
+  - {rx element: 129.16187989556133,tx element: 128.4138381201044,angle: 0 °,duration: 78 µs}
+  - {rx element: 129.66057441253261,tx element: 130.40861618798954,angle: 0 °,duration: 78 µs}
+  - {rx element: 130.1592689295039,tx element: 130.40861618798954,angle: 0 °,duration: 78 µs}
+  - {rx element: 130.65796344647518,tx element: 130.40861618798954,angle: 0 °,duration: 78 µs}
+  - {rx element: 131.15665796344643,tx element: 130.40861618798954,angle: 0 °,duration: 78 µs}
+  - {rx element: 131.65535248041772,tx element: 132.40339425587462,angle: 0 °,duration: 78 µs}
+  - {rx element: 132.154046997389,tx element: 132.40339425587462,angle: 0 °,duration: 78 µs}
+  - {rx element: 132.65274151436029,tx element: 132.40339425587462,angle: 0 °,duration: 78 µs}
+  - {rx element: 133.15143603133154,tx element: 132.40339425587462,angle: 0 °,duration: 78 µs}
+  - {rx element: 133.65013054830283,tx element: 134.39817232375975,angle: 0 °,duration: 78 µs}
+  - {rx element: 134.14882506527411,tx element: 134.39817232375975,angle: 0 °,duration: 78 µs}
+  - {rx element: 134.64751958224539,tx element: 134.39817232375975,angle: 0 °,duration: 78 µs}
+  - {rx element: 135.14621409921665,tx element: 134.39817232375975,angle: 0 °,duration: 78 µs}
+  - {rx element: 135.64490861618796,tx element: 136.39295039164486,angle: 0 °,duration: 78 µs}
+  - {rx element: 136.14360313315925,tx element: 136.39295039164486,angle: 0 °,duration: 78 µs}
+  - {rx element: 136.64229765013053,tx element: 136.39295039164486,angle: 0 °,duration: 78 µs}
+  - {rx element: 137.14099216710179,tx element: 136.39295039164486,angle: 0 °,duration: 78 µs}
+  - {rx element: 137.63968668407304,tx element: 138.38772845952997,angle: 0 °,duration: 78 µs}
+  - {rx element: 138.13838120104433,tx element: 138.38772845952997,angle: 0 °,duration: 78 µs}
+  - {rx element: 138.63707571801561,tx element: 138.38772845952997,angle: 0 °,duration: 78 µs}
+  - {rx element: 139.13577023498686,tx element: 138.38772845952997,angle: 0 °,duration: 78 µs}
+  - {rx element: 139.63446475195818,tx element: 140.3825065274151,angle: 0 °,duration: 78 µs}
+  - {rx element: 140.13315926892946,tx element: 140.3825065274151,angle: 0 °,duration: 78 µs}
+  - {rx element: 140.63185378590074,tx element: 140.3825065274151,angle: 0 °,duration: 78 µs}
+  - {rx element: 141.130548302872,tx element: 140.3825065274151,angle: 0 °,duration: 78 µs}
+  - {rx element: 141.62924281984328,tx element: 142.37728459530018,angle: 0 °,duration: 78 µs}
+  - {rx element: 142.12793733681457,tx element: 142.37728459530018,angle: 0 °,duration: 78 µs}
+  - {rx element: 142.62663185378585,tx element: 142.37728459530018,angle: 0 °,duration: 78 µs}
+  - {rx element: 143.12532637075711,tx element: 142.37728459530018,angle: 0 °,duration: 78 µs}
+  - {rx element: 143.62402088772839,tx element: 144.37206266318532,angle: 0 °,duration: 78 µs}
+  - {rx element: 144.12271540469968,tx element: 144.37206266318532,angle: 0 °,duration: 78 µs}
+  - {rx element: 144.62140992167096,tx element: 144.37206266318532,angle: 0 °,duration: 78 µs}
+  - {rx element: 145.12010443864222,tx element: 144.37206266318532,angle: 0 °,duration: 78 µs}
+  - {rx element: 145.61879895561353,tx element: 146.36684073107043,angle: 0 °,duration: 78 µs}
+  - {rx element: 146.11749347258481,tx element: 146.36684073107043,angle: 0 °,duration: 78 µs}
+  - {rx element: 146.6161879895561,tx element: 146.36684073107043,angle: 0 °,duration: 78 µs}
+  - {rx element: 147.11488250652735,tx element: 146.36684073107043,angle: 0 °,duration: 78 µs}
+  - {rx element: 147.61357702349864,tx element: 148.36161879895553,angle: 0 °,duration: 78 µs}
+  - {rx element: 148.11227154046992,tx element: 148.36161879895553,angle: 0 °,duration: 78 µs}
+  - {rx element: 148.6109660574412,tx element: 148.36161879895553,angle: 0 °,duration: 78 µs}
+  - {rx element: 149.10966057441246,tx element: 148.36161879895553,angle: 0 °,duration: 78 µs}
+  - {rx element: 149.60835509138374,tx element: 150.35639686684067,angle: 0 °,duration: 78 µs}
+  - {rx element: 150.10704960835503,tx element: 150.35639686684067,angle: 0 °,duration: 78 µs}
+  - {rx element: 150.60574412532631,tx element: 150.35639686684067,angle: 0 °,duration: 78 µs}
+  - {rx element: 151.10443864229757,tx element: 150.35639686684067,angle: 0 °,duration: 78 µs}
+  - {rx element: 151.60313315926888,tx element: 152.35117493472578,angle: 0 °,duration: 78 µs}
+  - {rx element: 152.10182767624016,tx element: 152.35117493472578,angle: 0 °,duration: 78 µs}
+  - {rx element: 152.60052219321145,tx element: 152.35117493472578,angle: 0 °,duration: 78 µs}
+  - {rx element: 153.0992167101827,tx element: 152.35117493472578,angle: 0 °,duration: 78 µs}
+  - {rx element: 153.59791122715396,tx element: 154.34595300261088,angle: 0 °,duration: 78 µs}
+  - {rx element: 154.09660574412524,tx element: 154.34595300261088,angle: 0 °,duration: 78 µs}
+  - {rx element: 154.59530026109653,tx element: 154.34595300261088,angle: 0 °,duration: 78 µs}
+  - {rx element: 155.09399477806778,tx element: 154.34595300261088,angle: 0 °,duration: 78 µs}
+  - {rx element: 155.59268929503909,tx element: 156.34073107049599,angle: 0 °,duration: 78 µs}
+  - {rx element: 156.09138381201038,tx element: 156.34073107049599,angle: 0 °,duration: 78 µs}
+  - {rx element: 156.59007832898166,tx element: 156.34073107049599,angle: 0 °,duration: 78 µs}
+  - {rx element: 157.08877284595292,tx element: 156.34073107049599,angle: 0 °,duration: 78 µs}
+  - {rx element: 157.5874673629242,tx element: 158.3355091383811,angle: 0 °,duration: 78 µs}
+  - {rx element: 158.08616187989549,tx element: 158.3355091383811,angle: 0 °,duration: 78 µs}
+  - {rx element: 158.58485639686677,tx element: 158.3355091383811,angle: 0 °,duration: 78 µs}
+  - {rx element: 159.08355091383802,tx element: 158.3355091383811,angle: 0 °,duration: 78 µs}
+  - {rx element: 159.58224543080931,tx element: 160.33028720626623,angle: 0 °,duration: 78 µs}
+  - {rx element: 160.08093994778059,tx element: 160.33028720626623,angle: 0 °,duration: 78 µs}
+  - {rx element: 160.57963446475188,tx element: 160.33028720626623,angle: 0 °,duration: 78 µs}
+  - {rx element: 161.07832898172313,tx element: 160.33028720626623,angle: 0 °,duration: 78 µs}
+  - {rx element: 161.57702349869444,tx element: 162.32506527415137,angle: 0 °,duration: 78 µs}
+  - {rx element: 162.07571801566573,tx element: 162.32506527415137,angle: 0 °,duration: 78 µs}
+  - {rx element: 162.57441253263701,tx element: 162.32506527415137,angle: 0 °,duration: 78 µs}
+  - {rx element: 163.07310704960827,tx element: 162.32506527415137,angle: 0 °,duration: 78 µs}
+  - {rx element: 163.57180156657955,tx element: 164.31984334203645,angle: 0 °,duration: 78 µs}
+  - {rx element: 164.07049608355084,tx element: 164.31984334203645,angle: 0 °,duration: 78 µs}
+  - {rx element: 164.56919060052212,tx element: 164.31984334203645,angle: 0 °,duration: 78 µs}
+  - {rx element: 165.06788511749338,tx element: 164.31984334203645,angle: 0 °,duration: 78 µs}
+  - {rx element: 165.56657963446466,tx element: 166.31462140992159,angle: 0 °,duration: 78 µs}
+  - {rx element: 166.06527415143594,tx element: 166.31462140992159,angle: 0 °,duration: 78 µs}
+  - {rx element: 166.56396866840723,tx element: 166.31462140992159,angle: 0 °,duration: 78 µs}
+  - {rx element: 167.06266318537848,tx element: 166.31462140992159,angle: 0 °,duration: 78 µs}
+  - {rx element: 167.5613577023498,tx element: 168.30939947780669,angle: 0 °,duration: 78 µs}
+  - {rx element: 168.06005221932108,tx element: 168.30939947780669,angle: 0 °,duration: 78 µs}
+  - {rx element: 168.55874673629236,tx element: 168.30939947780669,angle: 0 °,duration: 78 µs}
+  - {rx element: 169.05744125326362,tx element: 168.30939947780669,angle: 0 °,duration: 78 µs}
+  - {rx element: 169.55613577023487,tx element: 170.3041775456918,angle: 0 °,duration: 78 µs}
+  - {rx element: 170.05483028720616,tx element: 170.3041775456918,angle: 0 °,duration: 78 µs}
+  - {rx element: 170.55352480417744,tx element: 170.3041775456918,angle: 0 °,duration: 78 µs}
+  - {rx element: 171.0522193211487,tx element: 170.3041775456918,angle: 0 °,duration: 78 µs}
+  - {rx element: 171.55091383812001,tx element: 172.29895561357694,angle: 0 °,duration: 78 µs}
+  - {rx element: 172.04960835509129,tx element: 172.29895561357694,angle: 0 °,duration: 78 µs}
+  - {rx element: 172.54830287206258,tx element: 172.29895561357694,angle: 0 °,duration: 78 µs}
+  - {rx element: 173.04699738903383,tx element: 172.29895561357694,angle: 0 °,duration: 78 µs}
+  - {rx element: 173.54569190600512,tx element: 174.29373368146202,angle: 0 °,duration: 78 µs}
+  - {rx element: 174.0443864229764,tx element: 174.29373368146202,angle: 0 °,duration: 78 µs}
+  - {rx element: 174.54308093994769,tx element: 174.29373368146202,angle: 0 °,duration: 78 µs}
+  - {rx element: 175.04177545691894,tx element: 174.29373368146202,angle: 0 °,duration: 78 µs}
+  - {rx element: 175.54046997389023,tx element: 176.28851174934715,angle: 0 °,duration: 78 µs}
+  - {rx element: 176.03916449086151,tx element: 176.28851174934715,angle: 0 °,duration: 78 µs}
+  - {rx element: 176.53785900783279,tx element: 176.28851174934715,angle: 0 °,duration: 78 µs}
+  - {rx element: 177.03655352480405,tx element: 176.28851174934715,angle: 0 °,duration: 78 µs}
+  - {rx element: 177.53524804177536,tx element: 178.28328981723226,angle: 0 °,duration: 78 µs}
+  - {rx element: 178.03394255874665,tx element: 178.28328981723226,angle: 0 °,duration: 78 µs}
+  - {rx element: 178.53263707571793,tx element: 178.28328981723226,angle: 0 °,duration: 78 µs}
+  - {rx element: 179.03133159268918,tx element: 178.28328981723226,angle: 0 °,duration: 78 µs}
+  - {rx element: 179.53002610966047,tx element: 180.27806788511737,angle: 0 °,duration: 78 µs}
+  - {rx element: 180.02872062663175,tx element: 180.27806788511737,angle: 0 °,duration: 78 µs}
+  - {rx element: 180.52741514360304,tx element: 180.27806788511737,angle: 0 °,duration: 78 µs}
+  - {rx element: 181.02610966057429,tx element: 180.27806788511737,angle: 0 °,duration: 78 µs}
+  - {rx element: 181.52480417754558,tx element: 182.2728459530025,angle: 0 °,duration: 78 µs}
+  - {rx element: 182.02349869451686,tx element: 182.2728459530025,angle: 0 °,duration: 78 µs}
+  - {rx element: 182.52219321148814,tx element: 182.2728459530025,angle: 0 °,duration: 78 µs}
+  - {rx element: 183.0208877284594,tx element: 182.2728459530025,angle: 0 °,duration: 78 µs}
+  - {rx element: 183.51958224543071,tx element: 184.26762402088764,angle: 0 °,duration: 78 µs}
+  - {rx element: 184.018276762402,tx element: 184.26762402088764,angle: 0 °,duration: 78 µs}
+  - {rx element: 184.51697127937328,tx element: 184.26762402088764,angle: 0 °,duration: 78 µs}
+  - {rx element: 185.01566579634454,tx element: 184.26762402088764,angle: 0 °,duration: 78 µs}
+  - {rx element: 185.51436031331579,tx element: 186.26240208877272,angle: 0 °,duration: 78 µs}
+  - {rx element: 186.01305483028707,tx element: 186.26240208877272,angle: 0 °,duration: 78 µs}
+  - {rx element: 186.51174934725836,tx element: 186.26240208877272,angle: 0 °,duration: 78 µs}
+  - {rx element: 187.01044386422961,tx element: 186.26240208877272,angle: 0 °,duration: 78 µs}
+  - {rx element: 187.50913838120093,tx element: 188.25718015665782,angle: 0 °,duration: 78 µs}
+  - {rx element: 188.00783289817221,tx element: 188.25718015665782,angle: 0 °,duration: 78 µs}
+  - {rx element: 188.50652741514349,tx element: 188.25718015665782,angle: 0 °,duration: 78 µs}
+  - {rx element: 189.00522193211475,tx element: 188.25718015665782,angle: 0 °,duration: 78 µs}
+  - {rx element: 189.50391644908603,tx element: 190.25195822454296,angle: 0 °,duration: 78 µs}
+  - {rx element: 190.00261096605732,tx element: 190.25195822454296,angle: 0 °,duration: 78 µs}
+  - {rx element: 190.5013054830286,tx element: 190.25195822454296,angle: 0 °,duration: 78 µs}
+  - {rx element: 190.99999999999986,tx element: 190.25195822454296,angle: 0 °,duration: 78 µs}
+focus:
+  - depth: 14.25 mm
+    tx frequency: 14 MHz
+    receive:
+      - {shallowfreq: 15 MHz,deepfreq: 10 MHz,filterdepth: 28.5 mm}
+      - {shallowfreq: 15 MHz,deepfreq: 10 MHz,filterdepth: 28.5 mm}
+      - {shallowfreq: 15 MHz,deepfreq: 10 MHz,filterdepth: 28.5 mm}
+      - {shallowfreq: 15 MHz,deepfreq: 10 MHz,filterdepth: 28.5 mm}
+      - {shallowfreq: 15 MHz,deepfreq: 10 MHz,filterdepth: 28.5 mm}
+      - {shallowfreq: 15 MHz,deepfreq: 10 MHz,filterdepth: 28.5 mm}
+      - {shallowfreq: 15 MHz,deepfreq: 10 MHz,filterdepth: 28.5 mm}
+      - {shallowfreq: 15 MHz,deepfreq: 10 MHz,filterdepth: 28.5 mm}
+map:
+  map id: ''
+  map hue: 240
+  map saturation: 30
+compound:
+  exponent: 1.1000000000000001
+  blend: -1
+  low scale: 0
+  high scale: 0.10000000000000001
+roi: {start line: 0,end line: 383,start sample: 0,end sample: 555}
